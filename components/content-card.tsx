@@ -25,7 +25,8 @@ export function ContentCard({ type, title, meta, href, thumbnail }: ContentCardP
       <div
         className={cn(
           "relative flex w-full flex-col items-center justify-center gap-2 overflow-hidden rounded-[10px] border border-border bg-muted transition-colors duration-150 group-hover:bg-accent",
-          isVideo ? "aspect-video" : "aspect-square",
+          // En el carrusel mobile todas las miniaturas van en 16:9 para que la fila tenga la misma altura.
+          isVideo ? "aspect-video" : "aspect-video lg:aspect-square",
         )}
       >
         {thumbnail ? (

@@ -156,7 +156,7 @@ function Form({ state, pending, onSubmit }: FormProps) {
         )}
       </AnimatePresence>
 
-      <fieldset disabled={pending} className="flex flex-col gap-5 transition-opacity duration-150 disabled:opacity-60">
+      <fieldset disabled={pending} className="flex flex-col gap-5">
         <FormField id={fieldId("name")} label="Nombre" error={errors.name?.message}>
           <Input
             id={fieldId("name")}

@@ -13,7 +13,9 @@ const MAX_STAGGERED = 3;
 function useRevealVariants(): Variants {
   const reduced = useReducedMotion();
   return {
-    hidden: { opacity: 0, y: reduced ? 0 : 8 },
+    // El estado inicial no depende de `reduced` para que coincida con el HTML del servidor;
+    // MotionConfig reducedMotion="user" ya anula el desplazamiento.
+    hidden: { opacity: 0, y: 8 },
     visible: (index: number = 0) => ({
       opacity: 1,
       y: 0,

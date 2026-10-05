@@ -25,7 +25,7 @@ export function MethodStep({ step, title, body }: MethodStepProps) {
       </div>
       <p className="text-label-sm text-muted-foreground">Paso {step}</p>
       <h3 className="text-h3 text-foreground">{title}</h3>
-      <p className="text-body text-muted-foreground">{body}</p>
+      <p className="text-body text-muted-foreground lg:max-w-[280px]">{body}</p>
     </li>
   );
 }

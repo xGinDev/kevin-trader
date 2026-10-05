@@ -56,7 +56,7 @@ export function ServiceCard({ title, forWho, includes, format, duration, price, 
         ))}
       </dl>
 
-      <Button asChild variant="outline" className="mt-auto w-full">
+      <Button asChild variant="outline" className="w-full">
         <a href={`#${sectionIds.contact}`} onClick={() => preselectInterest(interest)}>
           {cta}
         </a>
