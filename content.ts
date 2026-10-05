@@ -7,12 +7,12 @@
 // ─── Identidad ──────────────────────────────────────────────────────────────
 
 export const site = {
-  name: "Mateo Ríos", // PLACEHOLDER
-  initials: "MR", // PLACEHOLDER: iniciales del Monogram hasta tener logo
-  city: "[Ciudad]", // PLACEHOLDER
-  country: "[País]", // PLACEHOLDER
+  name: "Kevin Jaramillo", // PLACEHOLDER
+  initials: "KJ", // PLACEHOLDER: iniciales del Monogram hasta tener logo
+  city: "Popayán", // PLACEHOLDER
+  country: "Colombia", // PLACEHOLDER
   copyrightYear: 2026,
-  metaTitle: "Mateo Ríos · Trader y educador", // PLACEHOLDER
+  metaTitle: "Kevin Jaramillo · Trader y educador", // PLACEHOLDER
   metaDescription:
     "Te enseño a operar con un plan y el riesgo definido antes de entrar. Mentorías 1:1, curso de fundamentos y comunidad de revisión semanal.",
 };
@@ -91,7 +91,7 @@ export const ctaLabel = "Hablemos";
 export const images = {
   portrait: {
     src: null as string | null, // PLACEHOLDER
-    alt: "Retrato de Mateo Ríos", // PLACEHOLDER
+    alt: "Retrato de Kevin Jaramillo", // PLACEHOLDER
     placeholderTitle: "Retrato profesional",
     placeholderNote:
       "Medio cuerpo, luz lateral suave, fondo neutro oscuro, mirada a cámara. Sin pantallas múltiples, autos ni billetes.",
@@ -99,7 +99,7 @@ export const images = {
   },
   working: {
     src: null as string | null, // PLACEHOLDER
-    alt: "Mateo Ríos revisando su diario de operaciones", // PLACEHOLDER
+    alt: "Kevin Jaramillo revisando su diario de operaciones", // PLACEHOLDER
     placeholderTitle: "Foto trabajando",
     placeholderNote:
       "Revisando su diario de operaciones, en papel o pantalla. Plano medio, sin mostrar saldos ni ganancias.",
