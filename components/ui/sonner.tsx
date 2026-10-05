@@ -1,31 +1,31 @@
 "use client"
 
-import { useTheme } from "next-themes"
 import { Toaster as Sonner, type ToasterProps } from "sonner"
 import { CircleCheckIcon, InfoIcon, TriangleAlertIcon, OctagonXIcon, Loader2Icon } from "lucide-react"
 
+// Figma · Toast: popover, borde, Shadow/Overlay, ícono ámbar. Se va solo a los 3 s.
 const Toaster = ({ ...props }: ToasterProps) => {
-  const { theme = "system" } = useTheme()
-
   return (
     <Sonner
-      theme={theme as ToasterProps["theme"]}
+      theme="dark"
+      position="bottom-center"
+      duration={3000}
       className="toaster group"
       icons={{
         success: (
-          <CircleCheckIcon className="size-4" />
+          <CircleCheckIcon className="size-[18px] text-primary" />
         ),
         info: (
-          <InfoIcon className="size-4" />
+          <InfoIcon className="size-[18px]" />
         ),
         warning: (
-          <TriangleAlertIcon className="size-4" />
+          <TriangleAlertIcon className="size-[18px]" />
         ),
         error: (
-          <OctagonXIcon className="size-4" />
+          <OctagonXIcon className="size-[18px] text-destructive" />
         ),
         loading: (
-          <Loader2Icon className="size-4 animate-spin" />
+          <Loader2Icon className="size-[18px] animate-spin" />
         ),
       }}
       style={
@@ -38,7 +38,8 @@ const Toaster = ({ ...props }: ToasterProps) => {
       }
       toastOptions={{
         classNames: {
-          toast: "cn-toast",
+          toast: "cn-toast !w-auto !px-4 !py-3.5 !gap-2.5 !shadow-overlay",
+          title: "text-label",
         },
       }}
       {...props}
